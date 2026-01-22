@@ -112,7 +112,9 @@ function Product(props) {
       
     {props.products.map((product) => (
       
-      <div key={product.name} className="productCard">
+      <div key={product.name} className={`productCard
+      ${product.soldOut ? "productCardSoldOut" : ""}`}>
+      
       <ul className="ulStyle">
         <li className={`${product.soldOut ? "liCardSoldOut" : ""}`}>
           <img className="imgStyle" src={`${product.photoName}`} alt={product.photoName} />

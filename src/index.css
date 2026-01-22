@@ -96,14 +96,18 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: Add shadow */
     text-align: center; /* Center text inside cards */
     cursor: pointer;
+    transition: transform 0.3s ease;
 
 }
 
-.productCard:hover {
+/* aplicando para todas as child */
+.productCardSoldOut,
+.productCardSoldOut * {
+    cursor: not-allowed;
+}
 
-    transform: scale(1.1);
-    transition: 1s ease-in-out;
-
+.productCard:not(.productCardSoldOut):hover {
+  transform: scale(1.05);
 }
 
 .imgStyle {
