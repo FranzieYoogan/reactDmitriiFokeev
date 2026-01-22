@@ -1,0 +1,179 @@
+body {
+
+    background-color: rgb(245, 247, 249);
+
+}
+
+/* HEADER */
+.headerStyle {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.containerHeader {
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(65, 84, 107);
+    box-sizing: border-box;
+
+}
+
+
+.headerTitle {
+    text-align: center;
+    color: rgb(249, 255, 255);
+
+}
+
+.containerAnchorsHeader {
+
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.anchorHeaderStyle {
+
+    text-decoration: none;
+    color: rgb(174, 188, 196);
+    border-bottom: 1px solid transparent;
+
+}
+
+.anchorHeaderStyle:hover {
+
+    border-bottom: 1px solid rgb(249, 255, 255);
+}
+
+
+.containerHourHeader {
+
+    text-align: center;
+    color: rgb(174, 188, 196);
+
+}
+
+.headerClosed {
+
+    color: red;
+    font-weight: bold;
+
+}
+
+.headerOpen {
+
+    color: green;
+    font-weight: bold;
+
+}
+
+/* PRODUCT */
+
+
+.containerProducts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px; /* Add max-width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 30px; /* Add some padding */
+    justify-items: center; /* Center items within grid cells */
+}
+
+.productCard {
+    width: 100%;
+    max-width: 320px;
+    background-color: white; /* Optional: Add background */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    padding: 20px; /* Optional: Add inner spacing */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: Add shadow */
+    text-align: center; /* Center text inside cards */
+    cursor: pointer;
+
+}
+
+.productCard:hover {
+
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+
+}
+
+.imgStyle {
+
+    width: 100%;
+    border-radius: 3px;
+    
+}
+
+.ulStyle {
+
+    list-style-type: none;
+    padding: 0;
+    
+
+}
+
+.liCardSoldOut {
+
+    opacity: 0.5;
+
+}
+
+.titleCard {
+
+    text-align: left;
+    color: rgb(81, 81, 81);
+
+}
+
+.descriptionCard {
+
+    text-align: left;
+    color: rgb(184, 184, 184);
+
+}
+
+.priceCard {
+
+    display: block;
+    text-align: left;
+    color: rgb(139, 163, 189);
+    font-weight: bold
+
+}
+
+.priceCardSoldOut {
+    display: block;
+    color: red;
+    text-align: left;
+
+}
+
+
+/* FOOTER */
+
+.containerFooter {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+    box-sizing: border-box;
+}
+
+.footerTitle {
+
+    text-align: center;
+    color: rgb(113, 113, 113);
+
+}
